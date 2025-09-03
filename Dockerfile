@@ -8,12 +8,9 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
 WORKDIR /app
 
 COPY datasets ./datasets
-COPY rest-api ./rest-api
-
-WORKDIR /app/rest-api
+COPY rest-api .
 
 RUN pip install -r requirements.txt
-
 
 EXPOSE 8000
 
