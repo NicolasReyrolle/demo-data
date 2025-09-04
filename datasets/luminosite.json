@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "libelle": "Plein jour"
+  },
+  {
+    "id": 2,
+    "libelle": "Crépuscule ou aube"
+  },
+  {
+    "id": 3,
+    "libelle": "Nuit sans éclairage public"
+  },
+  {
+    "id": 4,
+    "libelle": "Nuit avec éclairage public non allumé"
+  },
+  {
+    "id": 5,
+    "libelle": "Nuit avec éclairage public allumé"
+  }
+]
