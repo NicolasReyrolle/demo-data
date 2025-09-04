@@ -9,6 +9,7 @@ WORKDIR /app
 
 COPY datasets ./datasets
 COPY rest-api .
+COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
