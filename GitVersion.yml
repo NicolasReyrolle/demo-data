@@ -1,14 +1,16 @@
+
 mode: ContinuousDeployment
 tag-prefix: '[vV]'
 commit-message-incrementing: MergeMessageOnly
+
 branches:
   hotfix:
-    regex: (hotfix|dependabot\/pip)?[/-]
+    regex: ^(hotfix|dependabot/pip)[/-]
     source-branches: ['main']
   feature:
     increment: Minor
-    regex: feature?[/-]
+    regex: ^feature[/-]
   main:
     is-mainline: true
     increment: Patch
-    regex: main$
+    regex: ^main$
