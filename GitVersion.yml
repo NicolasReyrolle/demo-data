@@ -5,12 +5,16 @@ commit-message-incrementing: MergeMessageOnly
 
 branches:
   hotfix:
-    regex: ^(hotfix|dependabot/pip)[/-]
+    regex: ^hotfix[/-]
     source-branches: ['main']
+    increment: Patch
   feature:
     increment: Minor
     regex: ^feature[/-]
-  main:
-    is-mainline: true
+  dependabot:
+    mode: ContinuousDelivery
+    regex:  ^dependabot?[/-]
+    source-branches: ['feature','main','hotfix','dependabot']
     increment: Patch
+  main:
     regex: ^main$
