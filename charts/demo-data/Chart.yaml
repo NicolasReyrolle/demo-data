@@ -1,6 +1,6 @@
 apiVersion: v2
-name: demo-data
-description: A Helm chart for Kubernetes
+name: demo-data-chart
+description: A demo application offering sample data for various use cases.
 
 # A chart can be either an 'application' or a 'library' chart.
 #
