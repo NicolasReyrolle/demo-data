@@ -1,0 +1,44 @@
+name: tag-release-version
+on:
+  push:
+    branches:
+      - main
+concurrency: production
+jobs:
+  create-tag-version:
+    name: Create Tag Version
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    outputs:
+      branchName: ${{ steps.gitversion.outputs.branchName }}
+    steps:
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/setup@v4
+      with:
+        versionSpec: '6.x'
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Determine Version
+      id: gitversion
+      uses: gittools/actions/gitversion/execute@v4
+    - name: Display GitVersion outputs
+      run: |
+        echo "SemVer: ${{ steps.gitversion.outputs.semVer }}"
+    - name: Create tag
+      uses: actions/github-script@v8
+      with:
+        script: |
+          github.rest.git.createRef({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            ref: "refs/tags/v${{ steps.gitversion.outputs.semVer }}",
+            sha: context.sha
+          })
+    - uses: "marvinpinto/action-automatic-releases@v1.2.1"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        automatic_release_tag: v${{ steps.gitversion.outputs.semVer }}
