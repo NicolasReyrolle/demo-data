@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/NicolasReyrolle/demo-data/releases/download/demo-data-0.1.0/demo-data-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-13T12:10:02.289374956Z"
+  demo-data-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-09-15T06:30:33.131989634Z"
+    description: A demo application offering sample data for various use cases.
+    digest: 592a2aaca4b98e0092ad0d1dd569619626c4d5b4d832620cac47d6269f932e72
+    name: demo-data-chart
+    type: application
+    urls:
+    - https://github.com/NicolasReyrolle/demo-data/releases/download/demo-data-chart-0.1.0/demo-data-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-09-15T06:30:33.131995315Z"
