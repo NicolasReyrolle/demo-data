@@ -13,6 +13,16 @@ entries:
     version: 0.1.0
   demo-data-chart:
   - apiVersion: v2
+    appVersion: 0.0.17
+    created: "2025-09-23T12:07:01.787019663Z"
+    description: A demo application offering sample data for various use cases.
+    digest: ba054011613f5bd8a128aae4344b37ad137dc7eca54ccba2f1102b6d88895bf6
+    name: demo-data-chart
+    type: application
+    urls:
+    - https://github.com/NicolasReyrolle/demo-data/releases/download/demo-data-chart-0.1.1/demo-data-chart-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2025-09-15T06:30:33.131989634Z"
     description: A demo application offering sample data for various use cases.
@@ -22,4 +32,4 @@ entries:
     urls:
     - https://github.com/NicolasReyrolle/demo-data/releases/download/demo-data-chart-0.1.0/demo-data-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-15T06:30:33.131995315Z"
+generated: "2025-09-23T12:07:01.787033469Z"
