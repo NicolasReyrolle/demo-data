@@ -1,7 +1,7 @@
 annotated-types==0.7.0
 anyio==4.11.0
 certifi==2025.10.5
-click==8.2.1
+click==8.3.0
 colorama==0.4.6
 dnspython==2.8.0
 email-validator==2.3.0
@@ -10,7 +10,7 @@ fastapi-cli==0.0.13
 fastapi-cloud-cli==0.3.0
 h11==0.16.0
 httpcore==1.0.9
-httptools==0.6.4
+httptools==0.7.1
 httpx==0.28.1
 idna==3.11
 iniconfig==2.1.0
@@ -27,7 +27,7 @@ pytest==8.4.2
 python-dotenv==1.1.1
 python-multipart==0.0.20
 PyYAML==6.0.3
-rich==14.1.0
+rich==14.2.0
 rich-toolkit==0.15.1
 rignore==0.7.1
 sentry-sdk==2.41.0
