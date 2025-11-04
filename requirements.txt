@@ -21,7 +21,7 @@ mdurl==0.1.2
 packaging==25.0
 pluggy==1.6.0
 pydantic==2.12.3
-pydantic_core==2.33.2
+pydantic_core==2.41.4
 Pygments==2.19.2
 pytest==8.4.2
 python-dotenv==1.2.1
