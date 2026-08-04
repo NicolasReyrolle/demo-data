@@ -18,7 +18,7 @@ jobs:
       with:
         versionSpec: '6.x'
     - name: Checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0
     - name: Determine Version
@@ -28,7 +28,7 @@ jobs:
       run: |
         echo "SemVer: ${{ steps.gitversion.outputs.semVer }}"
     - name: Create tag
-      uses: actions/github-script@v8
+      uses: actions/github-script@v9
       with:
         script: |
           github.rest.git.createRef({
