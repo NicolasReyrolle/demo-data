@@ -1,5 +1,5 @@
 annotated-types==0.8.0
-anyio==4.14.2
+anyio==4.15.1
 certifi==2026.7.22
 click==8.5.0
 colorama==0.4.6
@@ -7,7 +7,7 @@ dnspython==2.8.0
 email-validator==2.3.0
 fastapi==0.141.1
 fastapi-cli==0.0.32
-fastapi-cloud-cli==0.24.0
+fastapi-cloud-cli==0.26.0
 h11==0.16.0
 httpcore==1.0.9
 httptools==0.8.0
@@ -28,16 +28,16 @@ python-dotenv==1.2.3
 python-multipart==0.0.32
 PyYAML==6.0.3
 rich==15.0.0
-rich-toolkit==0.20.3
+rich-toolkit==0.20.5
 rignore==0.8.1
-sentry-sdk==2.68.1
+sentry-sdk==2.69.1
 shellingham==1.5.4
 sniffio==1.3.1
 starlette==1.6.0
-typer==0.27.1
+typer==0.27.2
 typing-inspection==0.4.4
 typing_extensions==4.16.0
 urllib3==2.7.0
 uvicorn==0.52.4
 watchfiles==1.2.0
-websockets==17.0.1
+websockets==17.1
